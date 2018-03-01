@@ -1,4 +1,4 @@
-*React Barebones*
+h1. React Barebones
 
 Commands:
 
