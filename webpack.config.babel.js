@@ -1,8 +1,9 @@
 import webpack from 'webpack';
 import path from 'path';
+import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-const BUILD_DIR = path.resolve(__dirname, 'src/client/public');
-const APP_DIR = path.resolve(__dirname, 'src/client/app');
+const BUILD_DIR = path.resolve(__dirname, 'build');
+const APP_DIR = path.resolve(__dirname, 'src');
 
 const nodeEnv = process.env.NODE_ENV || 'development';
 const isProduction = 'production' === nodeEnv;
@@ -36,13 +37,23 @@ const config = {
 		},
 		{
 			test: /\.css$/,
-			loader: "style-loader!css-loader"
+			loaders: ExtractTextPlugin.extract({
+				fallback: 'style-loader',
+				use: isProduction
+					? 'css-loader?minimize!postcss-loader'
+					: 'css-loader?sourceMap!postcss-loader?sourceMap'
+			})
 		},
 		]
 	},
 	plugins: [
 		new webpack.NoEmitOnErrorsPlugin(),
-
+		
+		new ExtractTextPlugin({
+			filename: '[name].css',
+			allChunks: true
+		}),
+		
 		new webpack.DefinePlugin({
 			'process.env': {
 				NODE_ENV: JSON.stringify(nodeEnv)

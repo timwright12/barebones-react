@@ -1,0 +1,7 @@
+.header {
+	border: 10px solid cyan;
+}
+
+body {
+	background: var(--c-primary);
+}
