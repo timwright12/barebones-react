@@ -1,4 +1,4 @@
-# react-barebones
+React Barebones
 
 Commands:
 
