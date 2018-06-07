@@ -2,7 +2,7 @@ import webpack from 'webpack';
 import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
 
-const BUILD_DIR = path.resolve( __dirname, 'build' );
+const BUILD_DIR = path.resolve( __dirname, 'dist' );
 const APP_DIR = path.resolve( __dirname, 'src' );
 
 const nodeEnv = process.env.NODE_ENV || 'development';
@@ -13,7 +13,7 @@ const config = {
 	entry: APP_DIR + '/index.js',
 	output: {
 		path: BUILD_DIR,
-		filename: 'bundle.js'
+		filename: 'js/bundle.js'
 	},
 	resolve: {
 		modules: ['node_modules'],
@@ -42,7 +42,7 @@ const config = {
 		new webpack.NoEmitOnErrorsPlugin(),
 		
 		new ExtractTextPlugin( {
-			filename: '[name].css',
+			filename: 'css/[name].css',
 			allChunks: true
 		} ),
 		

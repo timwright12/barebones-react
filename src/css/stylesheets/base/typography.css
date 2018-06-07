@@ -1,0 +1,8 @@
+body {
+	background: var( --c-base );
+	color: var( --c-primary );
+}
+
+[aria-hidden="true"] {
+	display: none;
+}
