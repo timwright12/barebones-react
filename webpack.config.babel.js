@@ -25,14 +25,6 @@ const config = {
 			exclude: /node_modules/, 
 			use: [{
 				loader: 'babel-loader',
-				options: {
-					babelrc: false,
-					presets: [
-						'env',
-						'react'
-					]
-				}
-
 			}]
 		},
 		{
