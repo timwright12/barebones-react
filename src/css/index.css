@@ -1,5 +1,5 @@
 /* Dependencies */
-@import url( '../../node_modules/normalize.css/normalize.css' );
+@import "normalize.css"; /* == @import "../node_modules/normalize.css/normalize.css"; */
 
 /* Config */
 @import url( 'stylesheets/config/variables.css' );
