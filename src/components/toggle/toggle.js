@@ -1,7 +1,7 @@
 import React, { Component } from 'react';
 
 class Toggle extends Component {
-	
+
 	constructor( props ){
 
 		super( props );
@@ -12,25 +12,25 @@ class Toggle extends Component {
 
 		this.activateLasers = this.activateLasers.bind( this );
 	};
-	
+
 	activateLasers() {
-		
+
 		this.setState( prevState => ( {
 			areLasersOn: !prevState.areLasersOn
 		} ) );
 
 	}
-	
+
 	render() {
 		return (
 			<div>
-				<button 
+				<button
 					onClick={this.activateLasers}
 					type="button"
 					className="button"
 					aria-live="polite"
 					aria-atomic="false"
-					aria-relevent="text"
+					aria-relevant="text"
 					aria-controls={this.props.idVal}
 				>
 					Lasers are: {this.state.areLasersOn ? 'On' : 'Off'}

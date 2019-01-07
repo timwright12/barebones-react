@@ -1,9 +1,10 @@
 import React, { Component } from 'react';
+import Toggle from '../toggle/toggle';
 
-import Toggle from './toggle';
+import './footer.css';
 
 class Footer extends Component {
-	
+
 	render() {
 		return (
 			<footer className="footer" role="contentinfo">

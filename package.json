@@ -18,13 +18,13 @@
     "postcss-import": "^11.1.0",
     "postcss-loader": "^2.1.1",
     "postcss-preset-env": "^5.1.0",
-    "react": "^16.4.1",
-    "react-dom": "^16.4.1",
     "style-loader": "^0.20.2",
     "webpack": "^4.27.1",
     "webpack-cli": "^3.1.2"
   },
   "dependencies": {
-    "normalize.css": "^8.0.0"
+    "normalize.css": "^8.0.0",
+    "react": "^16.7.0",
+    "react-dom": "^16.7.0"
   }
 }

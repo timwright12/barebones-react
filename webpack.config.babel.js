@@ -13,7 +13,7 @@ const config = {
 	entry: APP_DIR + '/index.js',
 	output: {
 		path: BUILD_DIR,
-		filename: 'js/bundle.js'
+		filename: 'js/main.js'
 	},
 	resolve: {
 		modules: ['node_modules'],
@@ -22,7 +22,7 @@ const config = {
 		rules: [
 		{
 			test: /\.jsx?$/,
-			exclude: /node_modules/, 
+			exclude: /node_modules/,
 			use: [{
 				loader: 'babel-loader',
 			}]
@@ -40,12 +40,12 @@ const config = {
 	},
 	plugins: [
 		new webpack.NoEmitOnErrorsPlugin(),
-		
+
 		new ExtractTextPlugin( {
 			filename: 'css/[name].css',
 			allChunks: true
 		} ),
-		
+
 		new webpack.DefinePlugin( {
 			'process.env': {
 				NODE_ENV: JSON.stringify( nodeEnv )

@@ -2,12 +2,12 @@
 import React from 'react';
 import ReactDOM from 'react-dom';
 
-// Components
-import Header from './js/header';
-import Footer from './js/footer';
-
 // Global styles
-import './css/index.css';
+import './stylesheets/index.css';
+
+// Components
+import Header from './components/header/header';
+import Footer from './components/footer/footer';
 
 // Assemble the App from Components
 class App extends React.Component {
