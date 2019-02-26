@@ -6,5 +6,10 @@
   "extends": [
     "@10up/eslint-config",
     "plugin:react/recommended"
-  ]
+  ],
+  "settings": {
+    "react": {
+      "version": "detect"
+    }
+  }
 }
