@@ -9,7 +9,7 @@ import './footer.css';
 const Footer = () => (
 
 	<footer className="footer" role="contentinfo">
-		<Toggle idval="toggle-content-footer"/>
+		<Toggle idval="toggle-content-footer" />
 	</footer>
 
 );
