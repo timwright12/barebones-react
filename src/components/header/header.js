@@ -8,8 +8,8 @@ import './header.css';
  */
 const Header = () => (
 
-	<header className="header" role="banner">
-		<ul>
+	<header className="header spacing-base gutter-half" role="banner">
+		<ul className="spacing-clear gutter-clear list-clear">
 			<li><Link to='/'>Home</Link></li>
 			<li><Link to='/about'>About</Link></li>
 		</ul>

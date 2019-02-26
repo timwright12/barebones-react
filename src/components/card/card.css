@@ -1,0 +1,15 @@
+.card {
+	border: 1px solid var(--c-secondary);
+	display: flex;
+}
+
+.card__media {
+	margin-right: 1rem;
+	order: 1;
+}
+
+.card__title {
+	font-weight: 400;
+	order: 2;
+	text-transform: capitalize;
+}

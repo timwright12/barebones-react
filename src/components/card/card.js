@@ -1,14 +1,16 @@
 import React from 'react';
 import PropTypes from 'prop-types';
 
+import './card.css';
+
 /**
  * Footer component
  */
 const Card = ( props ) => (
 
-	<li className="card">
-		<h2>{props.name.first} {props.name.last}</h2>
-		<img src={props.picture.medium} alt="" />
+	<li className="card spacing-quarter gutter-quarter">
+		<h2 className="card__title">{props.name.first} {props.name.last}</h2>
+		<img className="card__media" src={props.picture.medium} alt="" />
 	</li>
 
 );

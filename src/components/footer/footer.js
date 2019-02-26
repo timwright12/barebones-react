@@ -8,7 +8,7 @@ import './footer.css';
  */
 const Footer = () => (
 
-	<footer className="footer" role="contentinfo">
+	<footer className="footer spacing-base gutter-half" role="contentinfo">
 		<Toggle idval="toggle-content-footer" />
 	</footer>
 

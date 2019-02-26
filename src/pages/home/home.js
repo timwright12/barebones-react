@@ -26,9 +26,7 @@ class Home extends Component {
 			} ).then( data => {
 				let returnedData = data.results.map( ( dataMap ) => {
 					return(
-						<ul className="card__list" key={dataMap.results}>
-							<Card {...dataMap} />
-						</ul>
+						<Card key={dataMap.results} {...dataMap} />
 					);
 				} );
 				this.setState( {data: returnedData} );
@@ -40,8 +38,10 @@ class Home extends Component {
 	 */
 	render() {
 		return (
-			<div>
-				{this.state.data}
+			<div className="spacing-base">
+				<ul className="spacing-clear gutter-clear list-clear">
+					{this.state.data}
+				</ul>
 			</div>
 		);
 	}
