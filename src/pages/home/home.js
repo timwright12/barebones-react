@@ -1,4 +1,5 @@
 import React, { Component } from 'react';
+import Card from '../../components/card/card';
 
 /**
  * Homepage template
@@ -25,10 +26,9 @@ class Home extends Component {
 			} ).then( data => {
 				let returnedData = data.results.map( ( dataMap ) => {
 					return(
-						<div className="person" key={dataMap.results}>
-							<h1>{dataMap.name.first} {dataMap.name.last}</h1>
-							<img src={dataMap.picture.medium} alt="" />
-						</div>
+						<ul className="card__list" key={dataMap.results}>
+							<Card {...dataMap} />
+						</ul>
 					);
 				} );
 				this.setState( {data: returnedData} );
