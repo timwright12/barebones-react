@@ -2,8 +2,8 @@ import React from 'react';
 import { Switch, Route } from 'react-router-dom';
 
 // Templates
-import Home from '../../templates/home/home';
-import About from '../../templates/about/about';
+import Home from '../../pages/home/home';
+import About from '../../pages/about/about';
 
 /**
  * Main component
