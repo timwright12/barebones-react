@@ -1,7 +1,7 @@
 // React
 import React from 'react';
 import ReactDOM from 'react-dom';
-import { BrowserRouter } from 'react-router-dom'
+import { BrowserRouter } from 'react-router-dom';
 
 // Global styles
 import './stylesheets/index.css';
@@ -11,8 +11,14 @@ import Header from './components/header/header';
 import Main from './components/main/main';
 import Footer from './components/footer/footer';
 
-// Assemble the App from Components
+/**
+ * App component
+ */
 class App extends React.Component {
+
+	/**
+	 * Standard render method
+	 */
 	render() {
 		return(
 			<div className="page">
@@ -20,7 +26,7 @@ class App extends React.Component {
 				<Main />
 				<Footer />
 			</div>
-		)
+		);
 	}
 }
 
