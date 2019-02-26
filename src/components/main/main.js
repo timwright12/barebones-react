@@ -1,22 +1,22 @@
-import React, { Component } from 'react';
-import { Switch, Route } from 'react-router-dom'
+import React from 'react';
+import { Switch, Route } from 'react-router-dom';
 
 // Templates
 import Home from '../../templates/home/home';
 import About from '../../templates/about/about';
 
-class Main extends Component {
+/**
+ * Main component
+ */
+const Main = () => (
 
-	render() {
-		return (
-			<main className="main" role="main">
-				<Switch>
-					<Route exact path='/' component={Home}/>
-					<Route path='/about' component={About}/>
-				</Switch>
-			</main>
-		);
-	}
-}
+	<main className="main" role="main">
+		<Switch>
+			<Route exact path='/' component={Home} />
+			<Route path='/about' component={About} />
+		</Switch>
+	</main>
+
+);
 
 export default Main;

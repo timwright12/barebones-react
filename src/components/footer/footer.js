@@ -1,17 +1,17 @@
-import React, { Component } from 'react';
+import React from 'react';
 import Toggle from '../toggle/toggle';
 
 import './footer.css';
 
-class Footer extends Component {
+/**
+ * Footer component
+ */
+const Footer = () => (
 
-	render() {
-		return (
-			<footer className="footer" role="contentinfo">
-				<Toggle idVal="toggle-content-footer"/>
-			</footer>
-		);
-	}
-}
+	<footer className="footer" role="contentinfo">
+		<Toggle idval="toggle-content-footer"/>
+	</footer>
+
+);
 
 export default Footer;

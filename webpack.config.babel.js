@@ -21,6 +21,14 @@ const config = {
 	module: {
 		rules: [
 		{
+			test: /\.js$/,
+			enforce: 'pre',
+			loader: 'eslint-loader',
+			options: {
+				fix: true
+			}
+		},
+		{
 			test: /\.jsx?$/,
 			exclude: /node_modules/,
 			use: [{
@@ -64,6 +72,7 @@ if ( isProduction ) {
 			sourceMap: true
 		} )
 	);
+	config.plugins.push();
 }
 
 module.exports = config;

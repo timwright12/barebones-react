@@ -1,7 +1,14 @@
 import React, { Component } from 'react';
+import PropTypes from 'prop-types';
 
+/**
+ * Toggle component
+ */
 class Toggle extends Component {
 
+	/**
+	 * Constructor
+	 */
 	constructor( props ){
 
 		super( props );
@@ -11,8 +18,11 @@ class Toggle extends Component {
 		};
 
 		this.activateLasers = this.activateLasers.bind( this );
-	};
+	}
 
+	/**
+	 * Turning on and off the lasers!
+	 */
 	activateLasers() {
 
 		this.setState( prevState => ( {
@@ -21,6 +31,9 @@ class Toggle extends Component {
 
 	}
 
+	/**
+	 * Standard render method
+	 */
 	render() {
 		return (
 			<div>
@@ -31,16 +44,20 @@ class Toggle extends Component {
 					aria-live="polite"
 					aria-atomic="false"
 					aria-relevant="text"
-					aria-controls={this.props.idVal}
+					aria-controls={this.props.idval}
 				>
 					Lasers are: {this.state.areLasersOn ? 'On' : 'Off'}
 				</button>
-				<div id={this.props.idVal} aria-hidden={this.state.areLasersOn ? 'false' : 'true'}>
+				<div id={this.props.idval} aria-hidden={this.state.areLasersOn ? 'false' : 'true'}>
 					<p>Welcome the Lasers.</p>
 				</div>
 			</div>
 		);
 	}
 }
+
+Toggle.propTypes = {
+	idval: PropTypes.string
+};
 
 export default Toggle;

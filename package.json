@@ -6,14 +6,19 @@
     "build": "webpack -p"
   },
   "devDependencies": {
+    "@10up/eslint-config": "^1.0.8",
+    "@babel/cli": "^7.2.3",
     "@babel/core": "^7.2.2",
     "@babel/preset-env": "^7.2.3",
     "@babel/preset-react": "^7.0.0",
     "@babel/register": "^7.0.0",
-    "babel-cli": "^6.26.0",
+    "babel-eslint": "^10.0.1",
     "babel-loader": "^8.0.5",
     "browserslist": "^4.3.7",
     "css-loader": "^2.1.0",
+    "eslint": "^5.13.0",
+    "eslint-loader": "^2.1.2",
+    "eslint-plugin-react": "^7.12.4",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
     "postcss": "^6.0.19",
     "postcss-custom-media": "^6.0.0",
@@ -26,6 +31,7 @@
   },
   "dependencies": {
     "normalize.css": "^8.0.0",
+    "prop-types": "^15.6.2",
     "react": "^16.7.0",
     "react-dom": "^16.7.0",
     "react-router-dom": "^4.3.1"
