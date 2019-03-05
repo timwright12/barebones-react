@@ -1,5 +1,5 @@
 {
-  "name": "react-starter",
+  "name": "barebones-react",
   "scripts": {
     "start": "yarn && webpack -d",
     "watch": "webpack -d --watch",
