@@ -1,6 +1,7 @@
 import webpack from 'webpack';
 import path from 'path';
 import ExtractTextPlugin from 'extract-text-webpack-plugin';
+import StyleLintPlugin from 'stylelint-webpack-plugin';
 
 const BUILD_DIR = path.resolve( __dirname, 'dist' );
 const APP_DIR = path.resolve( __dirname, 'src' );
@@ -52,6 +53,11 @@ const config = {
 		new ExtractTextPlugin( {
 			filename: 'css/[name].css',
 			allChunks: true
+		} ),
+
+		new StyleLintPlugin( {
+			files: "src/**/*.css",
+			fix: true,
 		} ),
 
 		new webpack.DefinePlugin( {
