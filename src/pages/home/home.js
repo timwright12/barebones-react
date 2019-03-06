@@ -1,5 +1,6 @@
 import React, { Component } from 'react';
 import Card from '../../components/card/card';
+import Announcement from '../../components/announcement/announcement';
 
 /**
  * Homepage template
@@ -13,6 +14,7 @@ class Home extends Component {
 		super();
 		this.state = {
 			data: [],
+			announcementMessage: null
 		};
 	}
 
@@ -20,6 +22,10 @@ class Home extends Component {
 	 * componentDidMount
 	 */
 	componentDidMount() {
+
+		document.title = 'Home';
+		this.container.focus();
+
 		fetch( 'https://randomuser.me/api/?results=3' )
 			.then( results => {
 				return results.json();
@@ -31,6 +37,9 @@ class Home extends Component {
 				} );
 				this.setState( {data: returnedData} );
 			} );
+
+		this.setState( { announcementMessage: 'The home page has loaded'} );
+
 	}
 
 	/**
@@ -38,10 +47,12 @@ class Home extends Component {
 	 */
 	render() {
 		return (
-			<div className="spacing-base">
+			<div className="spacing-base" tabIndex="-1" aria-labelledby="page-title" ref={( container ) => { this.container = container; }}>
+				<h1 id="page-title">Hello, Homepage</h1>
 				<ul className="spacing-clear gutter-clear list-clear">
 					{this.state.data}
 				</ul>
+				<Announcement message={this.state.announcementMessage} />
 			</div>
 		);
 	}
