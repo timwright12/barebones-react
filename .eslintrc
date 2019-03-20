@@ -1,13 +1,11 @@
 {
   "parser": "babel-eslint",
   "plugins": [
-    "react",
-    "jsx-a11y"
+    "react"
   ],
   "extends": [
     "@10up/eslint-config",
-    "plugin:react/recommended",
-    "plugin:jsx-a11y/recommended"
+    "plugin:react/recommended"
   ],
   "settings": {
     "react": {

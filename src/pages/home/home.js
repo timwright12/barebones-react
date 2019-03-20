@@ -30,7 +30,7 @@ class Home extends Component {
 			.then( results => {
 				return results.json();
 			} ).then( data => {
-				let returnedData = data.results.map( ( dataMap ) => {
+				const returnedData = data.results.map( ( dataMap ) => {
 					return(
 						<Card key={dataMap.results} {...dataMap} />
 					);
