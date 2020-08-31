@@ -7,21 +7,21 @@
   },
   "devDependencies": {
     "@10up/eslint-config": "^1.0.8",
-    "@babel/cli": "^7.2.3",
-    "@babel/core": "^7.2.2",
-    "@babel/preset-env": "^7.2.3",
-    "@babel/preset-react": "^7.0.0",
-    "@babel/register": "^7.0.0",
-    "babel-eslint": "^10.0.1",
-    "babel-loader": "^8.0.5",
-    "browserslist": "^4.3.7",
+    "@babel/cli": "^7.10.5",
+    "@babel/core": "^7.11.4",
+    "@babel/preset-env": "^7.11.0",
+    "@babel/preset-react": "^7.10.4",
+    "@babel/register": "^7.10.5",
+    "babel-eslint": "^10.1.0",
+    "babel-loader": "^8.1.0",
+    "browserslist": "^4.14.0",
     "css-loader": "^2.1.0",
     "eslint": "^5.15.1",
     "eslint-loader": "^2.1.2",
-    "eslint-plugin-jsx-a11y": "^6.2.1",
-    "eslint-plugin-react": "^7.12.4",
+    "eslint-plugin-jsx-a11y": "^6.3.1",
+    "eslint-plugin-react": "^7.20.6",
     "extract-text-webpack-plugin": "^4.0.0-beta.0",
-    "postcss": "^7.0.14",
+    "postcss": "^7.0.32",
     "postcss-custom-media": "^7.0.7",
     "postcss-import": "^12.0.1",
     "postcss-loader": "^3.0.0",
@@ -32,15 +32,15 @@
     "stylelint-declaration-use-variable": "^1.7.0",
     "stylelint-order": "^2.1.0",
     "stylelint-webpack-plugin": "^0.10.5",
-    "webpack": "^4.27.1",
-    "webpack-cli": "^3.1.2"
+    "webpack": "^4.44.1",
+    "webpack-cli": "^3.3.12"
   },
   "dependencies": {
     "@barebones/card": "^0.0.1",
     "normalize.css": "^8.0.0",
     "prop-types": "^15.7.2",
-    "react": "^16.12.0",
-    "react-dom": "^16.12.0",
-    "react-router-dom": "^5.1.2"
+    "react": "^16.13.1",
+    "react-dom": "^16.13.1",
+    "react-router-dom": "^5.2.0"
   }
 }
