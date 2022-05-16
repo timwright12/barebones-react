@@ -6,12 +6,12 @@ import './footer.css';
 /**
  * Footer component
  */
-const Footer = () => (
-
-	<footer className="footer spacing-base gutter-half" role="contentinfo">
-		<Toggle idval="toggle-content-footer" />
-	</footer>
-
-);
+function Footer() {
+  return (
+    <footer className="footer spacing-base gutter-half" role="contentinfo">
+      <Toggle idval="toggle-content-footer" />
+    </footer>
+  );
+}
 
 export default Footer;

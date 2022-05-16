@@ -8,15 +8,15 @@ import About from '../../pages/about/about';
 /**
  * Main component
  */
-const Main = () => (
-
-	<main className="main" role="main">
-		<Switch>
-			<Route exact path='/' component={Home} />
-			<Route path='/about' component={About} />
-		</Switch>
-	</main>
-
-);
+function Main() {
+  return (
+    <main className="main" role="main">
+      <Switch>
+        <Route exact path="/" component={Home} />
+        <Route path="/about" component={About} />
+      </Switch>
+    </main>
+  );
+}
 
 export default Main;

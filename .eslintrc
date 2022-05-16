@@ -4,7 +4,8 @@
     "react"
   ],
   "extends": [
-    "@10up/eslint-config",
+    "eslint:recommended",
+    "airbnb",
     "plugin:react/recommended"
   ],
   "settings": {

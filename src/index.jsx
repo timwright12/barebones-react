@@ -15,24 +15,23 @@ import Footer from './components/footer/footer';
  * App component
  */
 class App extends React.Component {
-
-	/**
+  /**
 	 * Standard render method
 	 */
-	render() {
-		return(
-			<div className="page">
-				<Header />
-				<Main />
-				<Footer />
-			</div>
-		);
-	}
+  render() {
+    return (
+      <div className="page">
+        <Header />
+        <Main />
+        <Footer />
+      </div>
+    );
+  }
 }
 
 // Render the app
-ReactDOM.render( (
-	<BrowserRouter>
-		<App />
-	</BrowserRouter>
-), document.getElementById( 'root' ) );
+ReactDOM.render((
+  <BrowserRouter>
+    <App />
+  </BrowserRouter>
+), document.getElementById('root'));

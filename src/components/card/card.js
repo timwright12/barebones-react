@@ -6,21 +6,25 @@ import './card.css';
 /**
  * Footer component
  */
-const Card = ( props ) => (
-
-	<li className="card spacing-quarter gutter-quarter">
-		<h2 className="card__title">{props.name.first} {props.name.last}</h2>
-		<img className="card__media" src={props.picture.medium} alt="" />
-	</li>
-
-);
+function Card(props) {
+  return (
+    <li className="card spacing-quarter gutter-quarter">
+      <h2 className="card__title">
+        {props.name.first}
+        {' '}
+        {props.name.last}
+      </h2>
+      <img className="card__media" src={props.picture.medium} alt="" />
+    </li>
+  );
+}
 
 Card.propTypes = {
-	name: PropTypes.object,
-	first: PropTypes.string,
-	last: PropTypes.string,
-	picture: PropTypes.object,
-	medium: PropTypes.string
+  name: PropTypes.object,
+  first: PropTypes.string,
+  last: PropTypes.string,
+  picture: PropTypes.object,
+  medium: PropTypes.string,
 };
 
 export default Card;
