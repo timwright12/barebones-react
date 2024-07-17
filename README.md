@@ -1,59 +1,17 @@
-graph TD
-  SethE---VAMobile
+# React Barebones
 
-  subgraph VAMobile
-  
-  Tim---IC
-  Matt---IC
-  Jen---IC
-  end
+[![Build Status][cli-img]][cli-url]
 
-  subgraph IC
-  
-  Adam---qart
-  Alayna---health
-  Ameet---global
-  Kelly---designsystem
-  Stacy---API
-  end
+Commands:
 
-  subgraph designsystem
-  
-  Narin---designsystem
-  TimR---designsystem
-  Jessica---designsystem
-  end
+`npm run start`
 
-  subgraph API
-  
-  Jayson---API
-  Jason---API
-  Andrew---API
-  Kris---API
-  end
+`npm run build`
 
-  subgraph qart
-  
-  Therese---qart
-  Tom---qart
-  Charnelle---qart
-  Rachael---qart
-  end
+`npm run watch`
 
-  subgraph global
-  
-  Jon---global
-  Theo---global
-  Chika---global
-  Misty---global
-  Holly---global
-  Victor---global
-  end
+[cli-img]: https://travis-ci.org/timwright12/barebones-react.svg?branch=master
+[cli-url]: https://travis-ci.org/timwright12/barebones-react
 
-  subgraph health
-  
-  Lauren---health
-  Dylan---health
-  Chris---health
-  end
-  end
+## Testing Mermaid
+
