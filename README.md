@@ -15,17 +15,62 @@ Commands:
 
 ## Testing Mermaid
 
-  Head---Lead
-  Head---Lead1
+graph TD
+  SethE---VAMobile
 
-  subgraph team1
+  subgraph VAMobile
   
-  Lead---sub1
-  Lead---sub2
+  Tim---IC
+  Matt---IC
+  Jen---IC
   end
 
-  subgraph team2
+  subgraph IC
+  
+  Adam---qart
+  Alayna---health
+  Ameet---global
+  Kelly---designsystem
+  Stacy---API
+  end
 
-  Lead1---sub3
-  Lead1---sub4
+  subgraph designsystem
+  
+  Narin---designsystem
+  TimR---designsystem
+  Jessica---designsystem
+  end
+
+  subgraph API
+  
+  Jayson---API
+  Jason---API
+  Andrew---API
+  Kris---API
+  end
+
+  subgraph qart
+  
+  Therese---qart
+  Tom---qart
+  Charnelle---qart
+  Rachael---qart
+  end
+
+  subgraph global
+  
+  Jon---global
+  Theo---global
+  Chika---global
+  Misty---global
+  Holly---global
+  Victor---global
+  end
+
+  subgraph health
+  
+  Lauren---health
+  Dylan---health
+  Chris---health
+  end
   end
