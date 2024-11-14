@@ -1,17 +1,13 @@
 # React Barebones
 
-[![Build Status][cli-img]][cli-url]
-
 Commands:
 
-`npm run start`
+`yarn start`
 
-`npm run build`
+`yarn build`
 
-`npm run watch`
-
-[cli-img]: https://travis-ci.org/timwright12/barebones-react.svg?branch=master
-[cli-url]: https://travis-ci.org/timwright12/barebones-react
+`yarn watch`
 
 ## Testing Mermaid
 
+TBD

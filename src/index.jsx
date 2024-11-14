@@ -1,4 +1,3 @@
-// React
 import React from 'react';
 import ReactDOM from 'react-dom';
 import { BrowserRouter } from 'react-router-dom';
@@ -29,9 +28,11 @@ class App extends React.Component {
   }
 }
 
-// Render the app
-ReactDOM.render((
-  <BrowserRouter>
-    <App />
-  </BrowserRouter>
-), document.getElementById('root'));
+if (typeof window !== 'undefined') {
+  const root = ReactDOM.createRoot(document.getElementById('root'));
+  root.render(
+    <BrowserRouter>
+      <App />
+    </BrowserRouter>,
+  );
+}
