@@ -4,7 +4,7 @@ import PropTypes from 'prop-types';
 import './card.css';
 
 /**
- * Footer component
+ * Card component
  */
 function Card(props) {
   return (
@@ -14,7 +14,7 @@ function Card(props) {
         {' '}
         {props.name.last}
       </h2>
-      <img className="card__media" src={props.picture.medium} alt="" />
+      <img className="card__media" src={props.picture.medium} alt={props.picture.alt} />
     </li>
   );
 }
@@ -25,6 +25,7 @@ Card.propTypes = {
   last: PropTypes.string,
   picture: PropTypes.object,
   medium: PropTypes.string,
+	alt: PropTypes.string,
 };
 
 export default Card;
