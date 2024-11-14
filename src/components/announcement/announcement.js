@@ -2,7 +2,7 @@ import React from 'react';
 import PropTypes from 'prop-types';
 
 /**
- * Footer component
+ * Announcement component
  */
 function Announcement(props) {
   return (
